@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/contato.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs') %>
+    <form action="/contato" method="POST">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="emailaddress" placeholder="Email" />
+      <label for="subject">Assunto</label>
+      <input id="subject" type="text" name="subject" placeholder="Assunto" />
+      <textarea
+        name="message"
+        cols="50"
+        rows="10"
+        placeholder="Insira aqui sua mensagem"
+      ></textarea>
+      <input type="submit" value="Enviar" />
+    </form>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

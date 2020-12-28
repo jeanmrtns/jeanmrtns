@@ -1,0 +1,28 @@
+/* Main */
+.caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 58vh;
+}
+
+.caixa h1 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.about-me p {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
