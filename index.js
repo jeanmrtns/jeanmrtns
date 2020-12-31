@@ -2,13 +2,12 @@ const express = require("express");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const app = express();
-const fs = require("fs");
 
 require("dotenv").config();
 
 let PORT = process.env.PORT;
 
-const transporter = nodemailer.createTransport({
+let transporter = nodemailer.createTransport({
   host: "smtp.umbler.com",
   port: 587,
   secure: false,
@@ -19,6 +18,17 @@ const transporter = nodemailer.createTransport({
 });
 
 app.set("view engine", "ejs");
+
+app.use((req, res, next) => {
+  //Cria um middleware onde todas as requests passam por ele
+  if ((req.headers["x-forwarded-proto"] || "").endsWith("http"))
+    //Checa se o protocolo informado nos headers é HTTP
+    res.redirect(`https://${req.headers.host}${req.url}`);
+  //Redireciona pra HTTPS
+  //Se a requisição já é HTTPS
+  else next(); //Não precisa redirecionar, passa para os próximos middlewares que servirão com o conteúdo desejado
+});
+
 app.use(express.static(__dirname + "/views"));
 app.use("/contato", express.static(path.join(__dirname, "contato")));
 app.use("/sobre", express.static(path.join(__dirname, "sobre")));
@@ -55,8 +65,12 @@ app.post("/contato", (req, res) => {
     })
     .catch((error) => {
       console.log(error);
-      res.send("Ocorreu um erro no envio");
+      res.send("Houve um erro no envio");
     });
+});
+
+app.use((req, res) => {
+  res.render("404");
 });
 
 app.listen(PORT, () => {

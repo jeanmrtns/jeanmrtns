@@ -1,21 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./assets/images/ico.PNG" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/sobre.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
     <title>Sobre</title>
   </head>
   <body>
     <%- include('../partials/header.ejs') %>
-    <main>
+    <div class="container mt-5 mb-5">
       <div class="caixa">
-        <h1>Jean Antônio Martins</h1>
-        <div class="about-me">
+        <h1 class="text-center text-danger">Jean Antônio Martins</h1>
+        <div class="about-me mt-5">
           <p>
             A aprendizagem de novas tecnicas e tecnologias são minhas obsessões.
             Vários cursos, tutoriais e leituras foram consumidos para o
@@ -35,9 +65,10 @@
             Qualquer dúvida ou crítica (construtiva), por favor entre em
             contato!
           </p>
+          <a class="pb-5" href="/contato">Me mande uma mensagem!</a>
         </div>
       </div>
-    </main>
+    </div>
     <%- include('../partials/footer.ejs') %>
   </body>
 </html>
