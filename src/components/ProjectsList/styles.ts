@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 8.5rem;
+  animation: slideup 1s ease;
 `;
 
 export const List = styled.ul`
@@ -15,6 +16,11 @@ export const Project = styled.li`
   border: 1px solid var(--primary);
   border-radius: 0.5rem;
   background-color: rgba(135, 62, 255, 0.1);
+
+  svg {
+    max-width: 100%;
+    object-position: center;
+  }
 `;
 
 export const ProjectTitle = styled.h2`

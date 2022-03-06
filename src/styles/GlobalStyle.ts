@@ -49,4 +49,28 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1080px;
     margin: 0 auto;
   }
+
+  @keyframes slideup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  }
+
+  @-webkit-keyframes slide {
+    100% { 
+      left: 0; 
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide {
+    100% { 
+      left: 0; 
+      opacity: 1;
+    }
+  }
+
 `;

@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 7rem;
+  -webkit-animation: slide 1s forwards;
+  animation: slide 1s forwards;
+  position: relative;
+  left: -1000px;
+  opacity: 0.3;
 `;
 
 export const Name = styled.p`
