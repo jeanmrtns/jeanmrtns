@@ -77,5 +77,6 @@ export const GithubButton = styled.a`
 
   &:hover {
     border-color: var(--primary);
+    color: var(--white);
   }
 `;
