@@ -1,4 +1,4 @@
-import { 
+import {
   Container,
   List,
   Project,
@@ -10,47 +10,31 @@ import {
 } from "./styles";
 
 import EmptyImage from '../../assets/empty_image.svg';
+import { ReposData } from "../../pages";
 
-export const ProjectsList = () => {
+interface ProjectsListProps {
+  repos: ReposData[];
+}
+
+export const ProjectsList = ({ repos }: ProjectsListProps) => {
   return (
     <Container>
       <List>
-        <Project>
-          <EmptyImage />
-          <ProjectTitle>Projeto 1</ProjectTitle>
-          <ProjectDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa? Alias, dignissimos! Quos, minima accusantium non ipsam iusto reprehenderit temporibus sed et doloremque repudiandae? Odio voluptatibus quaerat nisi iure qui?</ProjectDescription>
-          <ButtonGroup>
-            <DemoButton>Demo</DemoButton>
-            <GithubButton>Github</GithubButton>
-          </ButtonGroup>
-        </Project>
-        <Project>
-          <EmptyImage />
-          <ProjectTitle>Projeto 1</ProjectTitle>
-          <ProjectDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa? Alias, dignissimos! Quos, minima accusantium non ipsam iusto reprehenderit temporibus sed et doloremque repudiandae? Odio voluptatibus quaerat nisi iure qui?</ProjectDescription>
-          <ButtonGroup>
-            <DemoButton>Demo</DemoButton>
-            <GithubButton>Github</GithubButton>
-          </ButtonGroup>
-        </Project>
-        <Project>
-          <EmptyImage />
-          <ProjectTitle>Projeto 1</ProjectTitle>
-          <ProjectDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa? Alias, dignissimos! Quos, minima accusantium non ipsam iusto reprehenderit temporibus sed et doloremque repudiandae? Odio voluptatibus quaerat nisi iure qui?</ProjectDescription>
-          <ButtonGroup>
-            <DemoButton>Demo</DemoButton>
-            <GithubButton>Github</GithubButton>
-          </ButtonGroup>
-        </Project>
-        <Project>
-          <EmptyImage />
-          <ProjectTitle>Projeto 1</ProjectTitle>
-          <ProjectDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa? Alias, dignissimos! Quos, minima accusantium non ipsam iusto reprehenderit temporibus sed et doloremque repudiandae? Odio voluptatibus quaerat nisi iure qui?</ProjectDescription>
-          <ButtonGroup>
-            <DemoButton>Demo</DemoButton>
-            <GithubButton>Github</GithubButton>
-          </ButtonGroup>
-        </Project>        
+        {
+          repos.map((repo) => {
+            return (
+              <Project key={repo.id}>
+                <EmptyImage />
+                <ProjectTitle>{repo.name}</ProjectTitle>
+                <ProjectDescription>{repo.description}</ProjectDescription>
+                <ButtonGroup>
+                  <DemoButton href={repo.deployments_url} target="_blank">Demo</DemoButton>
+                  <GithubButton href={repo.html_url} target="_blank">Github</GithubButton>
+                </ButtonGroup>
+              </Project>
+            )
+          })
+        }
       </List>
     </Container>
   )

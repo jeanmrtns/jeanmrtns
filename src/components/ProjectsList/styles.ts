@@ -16,6 +16,8 @@ export const Project = styled.li`
   border: 1px solid var(--primary);
   border-radius: 0.5rem;
   background-color: rgba(135, 62, 255, 0.1);
+  display: flex;
+  flex-direction: column;
 
   svg {
     max-width: 100%;
@@ -31,7 +33,7 @@ export const ProjectTitle = styled.h2`
 `;
 
 export const ProjectDescription = styled.p`
-  margin-top: 1.4rem;
+  margin: 1.4rem 0;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: var(--text);
@@ -40,8 +42,9 @@ export const ProjectDescription = styled.p`
 export const ButtonGroup = styled.div`
   margin-top: 3.2rem;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  justify-self: flex-end;
+  margin-top: auto;
 `;
 
 export const DemoButton = styled.a`

@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hello everyone! 👋
 
-## Getting Started
+## Welcome to my profile. There are some informations about me:
 
-First, run the development server:
+__Age:__ 22
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+__Living:__ Poços de Caldas - MG - Brazil
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+__Study:__ Computer Science Bachelor / PUC Minas Campus Poços de Caldas - MG - Brazil
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+__Technologies:__ <a href="https://www.w3.org/TR/html5/" title="HTML5"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/html-5.svg" alt="HTML5" width="21px" height="21px"></a>
+ <a href="https://www.w3.org/TR/CSS/" title="CSS3"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/css-3.svg" alt="CSS3" width="21px" height="21px"></a>
+ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/javascript.svg" alt="JavaScript" width="21px" height="21px"></a> <a href="https://www.java.com/" title="Java"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/java.svg" alt="Java" width="21px" height="21px"></a>
+ <a href="https://www.python.org/" title="Python"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/python.svg" alt="Python" width="21px" height="21px"></a>
+ <a href="https://pt-br.reactjs.org/" title="ReactJS"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/react.svg" alt="ReactJS" width="21px" height="21px"></a>
+  <a href="https://nodejs.org//" title="NodeJS"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/nodejs-icon.svg" alt="NodeJS" width="21px" height="21px"></a>
+  
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 🌱 I’m currently learning and working with Full-Stack development
+- 👯 I’m looking to collaborate on everything I can
+- 💬 Ask me about anything
+- ⚡ Fun fact: If you don't know how you got here, I have no idea of how I got here too
