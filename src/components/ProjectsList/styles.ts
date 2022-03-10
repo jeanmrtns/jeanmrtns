@@ -74,9 +74,13 @@ export const GithubButton = styled.a`
   border: 1px solid var(--secondary);
   padding: 0.733rem 4rem;
   transition: all 0.3s;
+  color: var(--white);
 
   &:hover {
     border-color: var(--primary);
-    color: var(--white);
   }
+`;
+
+export const PageFrame = styled.iframe`
+  overflow: hidden;
 `;

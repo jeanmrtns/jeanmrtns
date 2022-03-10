@@ -6,7 +6,8 @@ import {
   ProjectDescription,
   ButtonGroup,
   DemoButton,
-  GithubButton
+  GithubButton,
+  PageFrame
 } from "./styles";
 
 import EmptyImage from '../../assets/empty_image.svg';
@@ -24,7 +25,8 @@ export const ProjectsList = ({ repos }: ProjectsListProps) => {
           repos.map((repo) => {
             return (
               <Project key={repo.id}>
-                <EmptyImage />
+                {/* <EmptyImage /> */}
+                <PageFrame src={repo.homepage} allow="accelerometer; fullscreen; gyroscope; midi" />
                 <ProjectTitle>{repo.name}</ProjectTitle>
                 <ProjectDescription>{repo.description}</ProjectDescription>
                 <ButtonGroup>
