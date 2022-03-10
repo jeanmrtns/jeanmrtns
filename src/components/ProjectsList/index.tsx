@@ -50,26 +50,7 @@ export const ProjectsList = () => {
             <DemoButton>Demo</DemoButton>
             <GithubButton>Github</GithubButton>
           </ButtonGroup>
-        </Project>
-        <Project>
-          <EmptyImage />
-          <ProjectTitle>Projeto 1</ProjectTitle>
-          <ProjectDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa? Alias, dignissimos! Quos, minima accusantium non ipsam iusto reprehenderit temporibus sed et doloremque repudiandae? Odio voluptatibus quaerat nisi iure qui?</ProjectDescription>
-          <ButtonGroup>
-            <DemoButton>Demo</DemoButton>
-            <GithubButton>Github</GithubButton>
-          </ButtonGroup>
-        </Project>
-        <Project>
-          <EmptyImage />
-          <ProjectTitle>Projeto 1</ProjectTitle>
-          <ProjectDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa? Alias, dignissimos! Quos, minima accusantium non ipsam iusto reprehenderit temporibus sed et doloremque repudiandae? Odio voluptatibus quaerat nisi iure qui?</ProjectDescription>
-          <ButtonGroup>
-            <DemoButton>Demo</DemoButton>
-            <GithubButton>Github</GithubButton>
-          </ButtonGroup>
-        </Project>
-        
+        </Project>        
       </List>
     </Container>
   )
