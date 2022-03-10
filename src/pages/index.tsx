@@ -8,11 +8,11 @@ import { ProjectsList } from "../components/ProjectsList";
 import { apiGithub } from "../services/apiGithub";
 
 export interface ReposData {
-  deployments_url: string;
-  description: string;
-  name: string;
-  html_url: string;
   id: string;
+  name: string;
+  description: string;
+  homepage: string;
+  html_url: string;
 }
 
 export default function Home() {

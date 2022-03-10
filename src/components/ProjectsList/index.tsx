@@ -28,7 +28,7 @@ export const ProjectsList = ({ repos }: ProjectsListProps) => {
                 <ProjectTitle>{repo.name}</ProjectTitle>
                 <ProjectDescription>{repo.description}</ProjectDescription>
                 <ButtonGroup>
-                  <DemoButton href={repo.deployments_url} target="_blank">Demo</DemoButton>
+                  <DemoButton href={repo.homepage} target="_blank">Demo</DemoButton>
                   <GithubButton href={repo.html_url} target="_blank">Github</GithubButton>
                 </ButtonGroup>
               </Project>
