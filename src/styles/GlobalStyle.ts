@@ -48,6 +48,10 @@ export const GlobalStyle = createGlobalStyle`
   .container {
     max-width: 1080px;
     margin: 0 auto;
+
+    @media (max-width: 720px) {
+      padding: 0.25rem 1rem;
+    }
   }
 
   @keyframes slideup {
