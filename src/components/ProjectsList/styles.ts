@@ -9,6 +9,10 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.6rem 1.7rem;
+
+  @media (max-width: 720px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Project = styled.li`

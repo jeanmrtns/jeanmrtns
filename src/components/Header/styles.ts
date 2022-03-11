@@ -10,6 +10,12 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -31,6 +37,14 @@ export const Navigation = styled.nav`
             border-color: var(--secondary);
           }
         }
+      }
+    }
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+      
+      li {
+        margin-left: 0;
       }
     }
   }
