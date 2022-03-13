@@ -1,9 +1,11 @@
+import { SocialLinks } from "../SocialLinks"
 import { About, Container, Name, Title } from "./styles"
 
 export const Banner = () => {
   return (
     <Container>
       <Name>Jean Martins - 22 anos</Name>
+      <SocialLinks />
       <Title>Meus principais projetos</Title>
       <About>
         <p>Sou desenvolvedor desde 2019 e estou procurando melhorar um pouco a cada dia.</p>

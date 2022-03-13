@@ -1,17 +1,9 @@
+import { ReposData } from "../../pages";
 import {
-  Container,
-  List,
-  Project,
-  ProjectTitle,
-  ProjectDescription,
-  ButtonGroup,
-  DemoButton,
-  GithubButton,
-  PageFrame
+  ButtonGroup, Container, DemoButton,
+  GithubButton, List, PageFrame, Project, ProjectDescription, ProjectTitle
 } from "./styles";
 
-import EmptyImage from '../../assets/empty_image.svg';
-import { ReposData } from "../../pages";
 
 interface ProjectsListProps {
   repos: ReposData[];
@@ -25,7 +17,6 @@ export const ProjectsList = ({ repos }: ProjectsListProps) => {
           repos.map((repo) => {
             return (
               <Project key={repo.id}>
-                {/* <EmptyImage /> */}
                 <PageFrame src={repo.homepage} allow="accelerometer; fullscreen; gyroscope; midi" />
                 <ProjectTitle>{repo.name}</ProjectTitle>
                 <ProjectDescription>{repo.description}</ProjectDescription>
