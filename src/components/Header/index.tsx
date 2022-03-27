@@ -1,6 +1,7 @@
+import { BsChatDots } from 'react-icons/bs';
+import { FiFilePlus, FiGithub } from 'react-icons/fi';
 import LogoImage from '../../assets/logo.svg';
-import { Container, Content, Navigation, Logo, Link } from './styles';
-import { FiGithub, FiFilePlus } from 'react-icons/fi';
+import { Container, Content, Link, Logo, Navigation } from './styles';
 
 export const Header = () => {
   return (
@@ -22,6 +23,12 @@ export const Header = () => {
               <Link href='/cv-jean-martins.pdf' download="Curriculo Jean">
                 <FiFilePlus />
                 Curriculo
+              </Link>
+            </li>
+            <li>
+              <Link href='/contact'>
+                <BsChatDots />
+                Contato
               </Link>
             </li>
           </ul>
