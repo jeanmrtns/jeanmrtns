@@ -1,4 +1,5 @@
 import { yupResolver } from '@hookform/resolvers/yup';
+import Head from 'next/head';
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { Container, ErrorText } from "../styles/Contact";
@@ -20,12 +21,15 @@ export default function Contact() {
     resolver: yupResolver(schema)
   });
 
-  async function handleEmailSubmit(form) {
+  async function handleEmailSubmit(form: FormData) {
     console.log(form);
   }
 
   return (
     <main className="container">
+      <Head>
+        <title>Jean Martins - FrontEnd Developer | Contato</title>
+      </Head>
       <Container>
         <h1>Entre em contato comigo</h1>
 
