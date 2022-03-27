@@ -1,3 +1,4 @@
+import { default as NextLink } from 'next/link';
 import { BsChatDots } from 'react-icons/bs';
 import { FiFilePlus, FiGithub } from 'react-icons/fi';
 import LogoImage from '../../assets/logo.svg';
@@ -8,7 +9,9 @@ export const Header = () => {
     <Container>
       <Content className='container'>
         <Logo>
-          <LogoImage />
+          <NextLink href="/" passHref>
+            <Link><LogoImage /></Link>
+          </NextLink>
         </Logo>
 
         <Navigation>
@@ -26,10 +29,12 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href='/contact'>
-                <BsChatDots />
-                Contato
-              </Link>
+              <NextLink href='/contact' passHref>
+                <Link>
+                  <BsChatDots />
+                  Contato
+                </Link>
+              </NextLink>
             </li>
           </ul>
         </Navigation>

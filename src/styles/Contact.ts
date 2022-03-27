@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Container = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 7rem;
+  -webkit-animation: slideup 1s forwards;
+  animation: slideup 1s forwards;
 
   h1 {
     margin-bottom: 2rem;

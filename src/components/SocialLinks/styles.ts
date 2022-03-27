@@ -12,6 +12,12 @@ export const Title = styled.h3`
 export const List = styled.ul`
   display: flex;
   margin-top: 1.5rem;
+  width: 100%;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    width: 20rem;
+  }
 
   li > a{
     display: flex;
@@ -30,6 +36,10 @@ export const List = styled.ul`
 
     &:hover {
       border-color: var(--primary);
+    }
+
+    @media (max-width: 720px) {
+      margin-top: 1rem;
     }
   }
 `;
