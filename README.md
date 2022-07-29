@@ -2,7 +2,7 @@
 
 ## Welcome to my profile. There are some informations about me:
 
-__Age:__ 22
+__Age:__ 23
 
 __Living:__ Poços de Caldas - MG - Brazil
 
@@ -17,7 +17,7 @@ __Technologies:__ <a href="https://www.w3.org/TR/html5/" title="HTML5"><img src=
   
 
 
-- 🌱 I’m currently learning and working with Full-Stack development
+- 🌱 I’m currently learning and working as Frontend development at @udooku
 - 👯 I’m looking to collaborate on everything I can
 - 💬 Ask me about anything
 - ⚡ Fun fact: If you don't know how you got here, I have no idea of how I got here too
