@@ -17,7 +17,7 @@ __Technologies:__ <a href="https://www.w3.org/TR/html5/" title="HTML5"><img src=
   
 
 
-- 🌱 I’m currently learning and working as Frontend development at @udooku
+- 🌱 I’m currently learning and working as Frontend developer at @udooku
 - 👯 I’m looking to collaborate on everything I can
 - 💬 Ask me about anything
 - ⚡ Fun fact: If you don't know how you got here, I have no idea of how I got here too
