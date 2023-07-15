@@ -29,7 +29,7 @@
 
 ###
 
-<p align="left">I'm Jean<br><br>- 🔭 I’m working as Frontend Developer<br>- 📚 Currently learning Python and specializing React<br>- ⚡ In my free time I like to study and to watch to series</p>
+<p align="left">I'm Jean<br><br>- 🔭 I’m working as Frontend Developer<br>- 📚 Currently learning Python and specializing in ReactJS<br>- ⚡ In my free time I like to study and to watch to series</p>
 <p align="left">Graduated in Computer Science 💻</p>
 
 ###
